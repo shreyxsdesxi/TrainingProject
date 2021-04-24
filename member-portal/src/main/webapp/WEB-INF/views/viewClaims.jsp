@@ -13,8 +13,36 @@
 	crossorigin="anonymous">
 <style>
 .container {
-	margin-top: 100px;
+	margin-top: 50px;
 }
+footer {
+	height: 80px;
+	bottom: 0;
+	position: fixed;
+	background-color: #989898;
+	width: 100%;
+	
+}
+
+footer p{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#background{
+	background-image: url("https://www.outsourcedataworks.com/assets/img/blog/banner/tips-to-speed-up-medical-claims-payments-inner.jpg");
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+}
+#background input {
+margin-top: 200px;
+margin-left: 220px;
+padding: 5px;
+border-radius: 2px;
+border: 0; 
+}
+
 </style>
 </head>
 
@@ -40,6 +68,10 @@
 			</ul>
 		</div>
 	</nav>
+	
+	<div id="background">
+		<input type="text" size="100%" placeholder="Search Policies"> 		
+	</div>
 	<div class="container">
 		
 		<h2>Claims</h2>
@@ -65,6 +97,12 @@
 			</tbody>
 		</table>
 	</div>
-
+	
+	
+	<footer>
+		<div>
+			<p>Copyright 2021</p>
+		</div>
+	</footer>
 </body>
 </html>

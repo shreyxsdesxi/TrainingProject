@@ -115,7 +115,7 @@ public class MemberPortalController {
 	public String successfulLogin(@RequestParam String username, @RequestParam String password, HttpSession session) {
 		if(password.equals("password")) {
 			session.setAttribute("username", username);
-			return "redirect:/viewPremium";
+			return "redirect:/dashboard";
 		}
 		else {
 			return "login";
@@ -162,6 +162,11 @@ public class MemberPortalController {
 	public String test(HttpSession session) {
 		session.invalidate();
 		return "redirect:/login";
+	}
+	
+	@GetMapping("/dashboard")
+	public String dashboard() {
+		return "dashboard";
 	}
 	
 }
